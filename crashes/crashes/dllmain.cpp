@@ -487,11 +487,6 @@ static void WINAPI Load(HMODULE hModule)
 					MemPut < BYTE > (0x555858, 0x90);
 				}
 			}
-			else if (type.compare("fpslimit") == 0)
-			{
-				if(enabled)
-					disableFPSLock();
-			}
 			else if (type.compare("nopostfx") == 0)
 			{
 				if (enabled)
